@@ -1,0 +1,603 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 20 2024 08:16:57[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0aed8h ( 44760) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001af00 vaddr=40800000 size=05118h ( 20760) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=156f4h ( 87796) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=0003571c vaddr=40805118 size=070dch ( 28892) load[0m
+[0;32mI (135) esp_image: segment 4: paddr=0003c800 vaddr=4080c200 size=018b0h (  6320) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=0003e0b8 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Unicore app[0m
+[0;32mI (174) cpu_start: Pro cpu start user code[0m
+[0;32mI (174) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (174) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     sensor_project01[0m
+[0;32mI (182) app_init: App version:      1[0m
+[0;32mI (187) app_init: Compile time:     Nov 20 2024 08:16:08[0m
+[0;32mI (193) app_init: ELF file SHA256:  c04bfcabf...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 4080EAC0 len 0006DB50 (438 KiB): RAM[0m
+[0;32mI (231) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (237) heap_init: At 50000004 len 00003FE4 (15 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (265) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (282) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (289) coexist: coex firmware version: 4482466[0m
+[0;32mI (295) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (310) ADC: calibration scheme version is Curve Fitting[0m
+[0;32mI (320) ADC: Calibration Success[0m
+PIR Sensor State: 0
+[0;32mI (320) ADC: ADC1 Channel[0] Raw Data: 2176[0m
+[0;32mI (330) ADC: ADC1 Channel[0] Cali Voltage: 2182 mV[0m
+MQ-5 Sensor Value: 2182
+[0;32mI (340) ADC: ADC1 Channel[0] Raw Data: 2176[0m
+[0;32mI (340) ADC: ADC1 Channel[0] Cali Voltage: 2182 mV[0m
+[0;32mI (350) main_task: Returned from app_main()[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (2340) ADC: ADC1 Channel[0] Raw Data: 2192[0m
+[0;32mI (2340) ADC: ADC1 Channel[0] Cali Voltage: 2197 mV[0m
+MQ-5 Sensor Value: 2197
+PIR Sensor State: 0
+[0;32mI (3350) ADC: ADC1 Channel[0] Raw Data: 2192[0m
+[0;32mI (3350) ADC: ADC1 Channel[0] Cali Voltage: 2197 mV[0m
+PIR Sensor State: 0
+[0;32mI (4340) ADC: ADC1 Channel[0] Raw Data: 2208[0m
+[0;32mI (4340) ADC: ADC1 Channel[0] Cali Voltage: 2213 mV[0m
+MQ-5 Sensor Value: 2213
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (6340) ADC: ADC1 Channel[0] Raw Data: 2208[0m
+[0;32mI (6340) ADC: ADC1 Channel[0] Cali Voltage: 2213 mV[0m
+MQ-5 Sensor Value: 2213
+[0;32mI (6350) ADC: ADC1 Channel[0] Raw Data: 2208[0m
+[0;32mI (6350) ADC: ADC1 Channel[0] Cali Voltage: 2213 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (8340) ADC: ADC1 Channel[0] Raw Data: 2224[0m
+[0;32mI (8340) ADC: ADC1 Channel[0] Cali Voltage: 2229 mV[0m
+MQ-5 Sensor Value: 2229
+PIR Sensor State: 0
+[0;32mI (9350) ADC: ADC1 Channel[0] Raw Data: 2224[0m
+[0;32mI (9350) ADC: ADC1 Channel[0] Cali Voltage: 2229 mV[0m
+PIR Sensor State: 0
+[0;32mI (10340) ADC: ADC1 Channel[0] Raw Data: 2224[0m
+[0;32mI (10340) ADC: ADC1 Channel[0] Cali Voltage: 2229 mV[0m
+MQ-5 Sensor Value: 2229
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (12340) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (12340) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+MQ-5 Sensor Value: 2245
+[0;32mI (12350) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (12350) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (14340) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (14340) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+MQ-5 Sensor Value: 2245
+PIR Sensor State: 0
+[0;32mI (15350) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (15350) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+PIR Sensor State: 0
+[0;32mI (16340) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (16340) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+MQ-5 Sensor Value: 2245
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (18340) ADC: ADC1 Channel[0] Raw Data: 2248[0m
+[0;32mI (18340) ADC: ADC1 Channel[0] Cali Voltage: 2253 mV[0m
+MQ-5 Sensor Value: 2253
+[0;32mI (18350) ADC: ADC1 Channel[0] Raw Data: 2248[0m
+[0;32mI (18350) ADC: ADC1 Channel[0] Cali Voltage: 2253 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (20340) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (20340) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+MQ-5 Sensor Value: 2261
+PIR Sensor State: 0
+[0;32mI (21350) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (21350) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+PIR Sensor State: 0
+[0;32mI (22340) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (22340) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+MQ-5 Sensor Value: 2261
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (24340) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (24340) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+MQ-5 Sensor Value: 2261
+[0;32mI (24350) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (24350) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (26340) ADC: ADC1 Channel[0] Raw Data: 2261[0m
+[0;32mI (26340) ADC: ADC1 Channel[0] Cali Voltage: 2266 mV[0m
+MQ-5 Sensor Value: 2266
+PIR Sensor State: 1
+[0;32mI (27350) ADC: ADC1 Channel[0] Raw Data: 2272[0m
+[0;32mI (27350) ADC: ADC1 Channel[0] Cali Voltage: 2277 mV[0m
+PIR Sensor State: 1
+[0;32mI (28340) ADC: ADC1 Channel[0] Raw Data: 2272[0m
+[0;32mI (28340) ADC: ADC1 Channel[0] Cali Voltage: 2277 mV[0m
+MQ-5 Sensor Value: 2277
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (30340) ADC: ADC1 Channel[0] Raw Data: 2275[0m
+[0;32mI (30340) ADC: ADC1 Channel[0] Cali Voltage: 2281 mV[0m
+MQ-5 Sensor Value: 2281
+[0;32mI (30350) ADC: ADC1 Channel[0] Raw Data: 2277[0m
+[0;32mI (30350) ADC: ADC1 Channel[0] Cali Voltage: 2283 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (32340) ADC: ADC1 Channel[0] Raw Data: 2287[0m
+[0;32mI (32340) ADC: ADC1 Channel[0] Cali Voltage: 2293 mV[0m
+MQ-5 Sensor Value: 2293
+PIR Sensor State: 0
+[0;32mI (33350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (33350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+PIR Sensor State: 0
+[0;32mI (34340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (34340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (36340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (36340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+[0;32mI (36350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (36350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 1
+[0;32mI (38340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (38340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+PIR Sensor State: 1
+[0;32mI (39350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (39350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+PIR Sensor State: 1
+[0;32mI (40340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (40340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+PIR Sensor State: 1
+PIR Sensor State: 0
+[0;32mI (42340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (42340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+[0;32mI (42350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (42350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (44340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (44340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+PIR Sensor State: 0
+[0;32mI (45350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (45350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+PIR Sensor State: 0
+[0;32mI (46340) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (46340) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+MQ-5 Sensor Value: 2294
+PIR Sensor State: 0
+PIR Sensor State: 1
+[0;32mI (48340) ADC: ADC1 Channel[0] Raw Data: 2295[0m
+[0;32mI (48340) ADC: ADC1 Channel[0] Cali Voltage: 2301 mV[0m
+MQ-5 Sensor Value: 2301
+[0;32mI (48350) ADC: ADC1 Channel[0] Raw Data: 2294[0m
+[0;32mI (48350) ADC: ADC1 Channel[0] Cali Voltage: 2300 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (50340) ADC: ADC1 Channel[0] Raw Data: 2301[0m
+[0;32mI (50340) ADC: ADC1 Channel[0] Cali Voltage: 2307 mV[0m
+MQ-5 Sensor Value: 2307
+PIR Sensor State: 1
+[0;32mI (51350) ADC: ADC1 Channel[0] Raw Data: 2299[0m
+[0;32mI (51350) ADC: ADC1 Channel[0] Cali Voltage: 2305 mV[0m
+PIR Sensor State: 1
+[0;32mI (52340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (52340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (54340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (54340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (54350) ADC: ADC1 Channel[0] Raw Data: 2299[0m
+[0;32mI (54350) ADC: ADC1 Channel[0] Cali Voltage: 2305 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (56340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (56340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+[0;32mI (57350) ADC: ADC1 Channel[0] Raw Data: 2302[0m
+[0;32mI (57350) ADC: ADC1 Channel[0] Cali Voltage: 2308 mV[0m
+PIR Sensor State: 0
+[0;32mI (58340) ADC: ADC1 Channel[0] Raw Data: 2302[0m
+[0;32mI (58340) ADC: ADC1 Channel[0] Cali Voltage: 2308 mV[0m
+MQ-5 Sensor Value: 2308
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (60340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (60340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (60350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (60350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (62340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (62340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 1
+[0;32mI (63350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (63350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+[0;32mI (64340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (64340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (66340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (66340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (66350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (66350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (68340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (68340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 1
+[0;32mI (69350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (69350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+[0;32mI (70340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (70340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (72340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (72340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (72350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (72350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (74340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (74340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+[0;32mI (75350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (75350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+[0;32mI (76340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (76340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (78340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (78340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (78350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (78350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (80340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (80340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 1
+[0;32mI (81350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (81350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+[0;32mI (82340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (82340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (84340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (84340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (84350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (84350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (86340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (86340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+[0;32mI (87350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (87350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+[0;32mI (88340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (88340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (90340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (90340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+[0;32mI (90350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (90350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (92340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (92340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+[0;32mI (93350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (93350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+[0;32mI (94340) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (94340) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+MQ-5 Sensor Value: 2310
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (96340) ADC: ADC1 Channel[0] Raw Data: 2306[0m
+[0;32mI (96340) ADC: ADC1 Channel[0] Cali Voltage: 2312 mV[0m
+MQ-5 Sensor Value: 2312
+[0;32mI (96350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (96350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 1
+[0;32mI (98340) ADC: ADC1 Channel[0] Raw Data: 2306[0m
+[0;32mI (98340) ADC: ADC1 Channel[0] Cali Voltage: 2312 mV[0m
+MQ-5 Sensor Value: 2312
+PIR Sensor State: 1
+[0;32mI (99350) ADC: ADC1 Channel[0] Raw Data: 2309[0m
+[0;32mI (99350) ADC: ADC1 Channel[0] Cali Voltage: 2315 mV[0m
+PIR Sensor State: 1
+[0;32mI (100340) ADC: ADC1 Channel[0] Raw Data: 2305[0m
+[0;32mI (100340) ADC: ADC1 Channel[0] Cali Voltage: 2311 mV[0m
+MQ-5 Sensor Value: 2311
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (102340) ADC: ADC1 Channel[0] Raw Data: 2310[0m
+[0;32mI (102340) ADC: ADC1 Channel[0] Cali Voltage: 2316 mV[0m
+MQ-5 Sensor Value: 2316
+[0;32mI (102350) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (102350) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (104340) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (104340) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+MQ-5 Sensor Value: 2313
+PIR Sensor State: 0
+[0;32mI (105350) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (105350) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+PIR Sensor State: 0
+[0;32mI (106340) ADC: ADC1 Channel[0] Raw Data: 2309[0m
+[0;32mI (106340) ADC: ADC1 Channel[0] Cali Voltage: 2315 mV[0m
+MQ-5 Sensor Value: 2315
+PIR Sensor State: 0
+PIR Sensor State: 1
+[0;32mI (108340) ADC: ADC1 Channel[0] Raw Data: 2310[0m
+[0;32mI (108340) ADC: ADC1 Channel[0] Cali Voltage: 2316 mV[0m
+MQ-5 Sensor Value: 2316
+[0;32mI (108350) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (108350) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (110340) ADC: ADC1 Channel[0] Raw Data: 2305[0m
+[0;32mI (110340) ADC: ADC1 Channel[0] Cali Voltage: 2311 mV[0m
+MQ-5 Sensor Value: 2311
+PIR Sensor State: 1
+[0;32mI (111350) ADC: ADC1 Channel[0] Raw Data: 2306[0m
+[0;32mI (111350) ADC: ADC1 Channel[0] Cali Voltage: 2312 mV[0m
+PIR Sensor State: 1
+[0;32mI (112340) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (112340) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+MQ-5 Sensor Value: 2313
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (114340) ADC: ADC1 Channel[0] Raw Data: 2306[0m
+[0;32mI (114340) ADC: ADC1 Channel[0] Cali Voltage: 2312 mV[0m
+MQ-5 Sensor Value: 2312
+[0;32mI (114350) ADC: ADC1 Channel[0] Raw Data: 2312[0m
+[0;32mI (114350) ADC: ADC1 Channel[0] Cali Voltage: 2318 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (116340) ADC: ADC1 Channel[0] Raw Data: 2307[0m
+[0;32mI (116340) ADC: ADC1 Channel[0] Cali Voltage: 2313 mV[0m
+MQ-5 Sensor Value: 2313
+PIR Sensor State: 0
+[0;32mI (117350) ADC: ADC1 Channel[0] Raw Data: 2311[0m
+[0;32mI (117350) ADC: ADC1 Channel[0] Cali Voltage: 2317 mV[0m
+PIR Sensor State: 0
+[0;32mI (118340) ADC: ADC1 Channel[0] Raw Data: 2314[0m
+[0;32mI (118340) ADC: ADC1 Channel[0] Cali Voltage: 2320 mV[0m
+MQ-5 Sensor Value: 2320
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (120340) ADC: ADC1 Channel[0] Raw Data: 2318[0m
+[0;32mI (120340) ADC: ADC1 Channel[0] Cali Voltage: 2324 mV[0m
+MQ-5 Sensor Value: 2324
+[0;32mI (120350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (120350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (122340) ADC: ADC1 Channel[0] Raw Data: 2317[0m
+[0;32mI (122340) ADC: ADC1 Channel[0] Cali Voltage: 2323 mV[0m
+MQ-5 Sensor Value: 2323
+PIR Sensor State: 1
+[0;32mI (123350) ADC: ADC1 Channel[0] Raw Data: 2318[0m
+[0;32mI (123350) ADC: ADC1 Channel[0] Cali Voltage: 2324 mV[0m
+PIR Sensor State: 0
+[0;32mI (124340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (124340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (126340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (126340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (126350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (126350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (128340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (128340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+[0;32mI (129350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (129350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+[0;32mI (130340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (130340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (132340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (132340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (132350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (132350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 0
+[0;32mI (134340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (134340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+[0;32mI (135350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (135350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+[0;32mI (136340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (136340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (138340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (138340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (138350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (138350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (140340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (140340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+[0;32mI (141350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (141350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+[0;32mI (142340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (142340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+PIR Sensor State: 0
+[0;32mI (144340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (144340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (144350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (144350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (146340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (146340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+[0;32mI (147350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (147350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+[0;32mI (148340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (148340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (150340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (150340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (150350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (150350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (152340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (152340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+[0;32mI (153350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (153350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+[0;32mI (154340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (154340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (156340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (156340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (156350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (156350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (158340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (158340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+[0;32mI (159350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (159350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+[0;32mI (160340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (160340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (162340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (162340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (162350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (162350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (164340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (164340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+[0;32mI (165350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (165350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 0
+[0;32mI (166340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (166340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+PIR Sensor State: 0
+PIR Sensor State: 0
+[0;32mI (168340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (168340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326
+[0;32mI (168350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (168350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+PIR Sensor State: 1
+PIR Sensor State: 1
+[0;32mI (170340) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (170340) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+MQ-5 Sensor Value: 2326

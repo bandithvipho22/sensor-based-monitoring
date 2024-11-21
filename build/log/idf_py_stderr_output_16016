@@ -1,0 +1,33 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b0b4: lcd_task at D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/main/main.c:85 (discriminator 1)
+[0m
+[0;33m--- 0x408064c3: _esp_error_check_failed at C:/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4080089e: panic_abort at C:/esp/esp-idf/components/esp_system/panic.c:463
+0x408064ce: __ubsan_include at C:/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[1;31m--- Error: GetOverlappedResult failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b0b4: lcd_task at D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/main/main.c:85 (discriminator 1)
+[0m
+[0;33m--- 0x408064c3: _esp_error_check_failed at C:/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m.[0m[0;33m[0m
+[0m
+Traceback (most recent call last):
+  File "c:\esp\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

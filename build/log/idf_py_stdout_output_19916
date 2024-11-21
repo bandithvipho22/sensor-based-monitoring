@@ -1,0 +1,277 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 20 2024 08:16:57[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0b070h ( 45168) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001b098 vaddr=40800000 size=04f80h ( 20352) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1581ch ( 88092) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=00035844 vaddr=40804f80 size=07274h ( 29300) load[0m
+[0;32mI (135) esp_image: segment 4: paddr=0003cac0 vaddr=4080c200 size=018b0h (  6320) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=0003e378 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Unicore app[0m
+[0;32mI (174) cpu_start: Pro cpu start user code[0m
+[0;32mI (174) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (174) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     sensor_project01[0m
+[0;32mI (182) app_init: App version:      1[0m
+[0;32mI (187) app_init: Compile time:     Nov 20 2024 08:16:08[0m
+[0;32mI (193) app_init: ELF file SHA256:  207016c0a...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 4080EAC0 len 0006DB50 (438 KiB): RAM[0m
+[0;32mI (231) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (237) heap_init: At 50000004 len 00003FE4 (15 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (265) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (282) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (289) coexist: coex firmware version: 4482466[0m
+[0;32mI (295) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) INIT: Initializing sensors...[0m
+[0;32mI (310) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) ADC: calibration scheme version is Curve Fitting[0m
+[0;32mI (320) ADC: Calibration Success[0m
+[0;32mI (330) INIT: Sensors initialized successfully![0m
+[0;32mI (330) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (340) ADC: ADC1 Channel[0] Raw Data: 2176[0m
+[0;32mI (340) ADC: ADC1 Channel[0] Cali Voltage: 2182 mV[0m
+[0;32mI (350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2182[0m
+[0;32mI (350) ADC: ADC1 Channel[0] Raw Data: 2176[0m
+[0;32mI (360) ADC: ADC1 Channel[0] Cali Voltage: 2182 mV[0m
+[0;32mI (360) LCD_TASK: Updating LCD...[0m
+[0;32mI (370) LCD_TASK: MQ5 Value: 2182, PIR State: No Motion[0m
+[0;32mI (370) INIT: Tasks created successfully![0m
+[0;32mI (380) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (380) main_task: Returned from app_main()[0m
+[0;32mI (1340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (2340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (2350) ADC: ADC1 Channel[0] Raw Data: 2208[0m
+[0;32mI (2350) ADC: ADC1 Channel[0] Cali Voltage: 2213 mV[0m
+[0;32mI (2350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2213[0m
+[0;32mI (3340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (3380) ADC: ADC1 Channel[0] Raw Data: 2224[0m
+[0;32mI (3380) ADC: ADC1 Channel[0] Cali Voltage: 2229 mV[0m
+[0;32mI (3380) LCD_TASK: Updating LCD...[0m
+[0;32mI (3380) LCD_TASK: MQ5 Value: 2229, PIR State: No Motion[0m
+[0;32mI (3390) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (4340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (4350) ADC: ADC1 Channel[0] Raw Data: 2240[0m
+[0;32mI (4350) ADC: ADC1 Channel[0] Cali Voltage: 2245 mV[0m
+[0;32mI (4350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2245[0m
+[0;32mI (5340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (6340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (6350) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (6350) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+[0;32mI (6350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2261[0m
+[0;32mI (6390) ADC: ADC1 Channel[0] Raw Data: 2256[0m
+[0;32mI (6390) ADC: ADC1 Channel[0] Cali Voltage: 2261 mV[0m
+[0;32mI (6390) LCD_TASK: Updating LCD...[0m
+[0;32mI (6390) LCD_TASK: MQ5 Value: 2261, PIR State: No Motion[0m
+[0;32mI (6400) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (7340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (8340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (8350) ADC: ADC1 Channel[0] Raw Data: 2272[0m
+[0;32mI (8350) ADC: ADC1 Channel[0] Cali Voltage: 2277 mV[0m
+[0;32mI (8350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2277[0m
+[0;32mI (9340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (9400) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (9400) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+[0;32mI (9400) LCD_TASK: Updating LCD...[0m
+[0;32mI (9400) LCD_TASK: MQ5 Value: 2294, PIR State: No Motion[0m
+[0;32mI (9410) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (10340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (10350) ADC: ADC1 Channel[0] Raw Data: 2288[0m
+[0;32mI (10350) ADC: ADC1 Channel[0] Cali Voltage: 2294 mV[0m
+[0;32mI (10350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2294[0m
+[0;32mI (11340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (12340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (12350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (12350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+[0;32mI (12350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2310[0m
+[0;32mI (12410) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (12410) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+[0;32mI (12410) LCD_TASK: Updating LCD...[0m
+[0;32mI (12410) LCD_TASK: MQ5 Value: 2310, PIR State: No Motion[0m
+[0;32mI (12420) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (13340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (14340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (14350) ADC: ADC1 Channel[0] Raw Data: 2304[0m
+[0;32mI (14350) ADC: ADC1 Channel[0] Cali Voltage: 2310 mV[0m
+[0;32mI (14350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2310[0m
+[0;32mI (15340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (15420) ADC: ADC1 Channel[0] Raw Data: 2313[0m
+[0;32mI (15420) ADC: ADC1 Channel[0] Cali Voltage: 2319 mV[0m
+[0;32mI (15420) LCD_TASK: Updating LCD...[0m
+[0;32mI (15420) LCD_TASK: MQ5 Value: 2319, PIR State: No Motion[0m
+[0;32mI (15430) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (16340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (16350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (16350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+[0;32mI (16350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2326[0m
+[0;32mI (17340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (18340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (18350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (18350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+[0;32mI (18350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2326[0m
+[0;32mI (18430) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (18430) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+[0;32mI (18430) LCD_TASK: Updating LCD...[0m
+[0;32mI (18430) LCD_TASK: MQ5 Value: 2326, PIR State: Motion[0m
+[0;32mI (18440) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (19340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (20340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (20350) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (20350) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+[0;32mI (20350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2326[0m
+[0;32mI (21340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (21440) ADC: ADC1 Channel[0] Raw Data: 2320[0m
+[0;32mI (21440) ADC: ADC1 Channel[0] Cali Voltage: 2326 mV[0m
+[0;32mI (21440) LCD_TASK: Updating LCD...[0m
+[0;32mI (21440) LCD_TASK: MQ5 Value: 2326, PIR State: No Motion[0m
+[0;32mI (21450) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (22340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (22350) ADC: ADC1 Channel[0] Raw Data: 2328[0m
+[0;32mI (22350) ADC: ADC1 Channel[0] Cali Voltage: 2334 mV[0m
+[0;32mI (22350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2334[0m
+[0;32mI (23340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (24340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (24350) ADC: ADC1 Channel[0] Raw Data: 2334[0m
+[0;32mI (24350) ADC: ADC1 Channel[0] Cali Voltage: 2340 mV[0m
+[0;32mI (24350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2340[0m
+[0;32mI (24450) ADC: ADC1 Channel[0] Raw Data: 2331[0m
+[0;32mI (24450) ADC: ADC1 Channel[0] Cali Voltage: 2337 mV[0m
+[0;32mI (24450) LCD_TASK: Updating LCD...[0m
+[0;32mI (24450) LCD_TASK: MQ5 Value: 2337, PIR State: No Motion[0m
+[0;32mI (24460) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (25340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (26340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (26350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (26350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (26350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (27340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (27460) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (27460) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (27460) LCD_TASK: Updating LCD...[0m
+[0;32mI (27460) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (27470) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (28340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (28350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (28350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (28350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (29340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (30340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (30350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (30350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (30350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (30470) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (30470) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (30470) LCD_TASK: Updating LCD...[0m
+[0;32mI (30470) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (30480) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (31340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (32340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (32350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (32350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (32350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (33340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (33480) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (33480) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (33480) LCD_TASK: Updating LCD...[0m
+[0;32mI (33480) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (33490) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (34340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (34350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (34350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (34350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (35340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (36340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (36350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (36350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (36350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (36490) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (36490) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (36490) LCD_TASK: Updating LCD...[0m
+[0;32mI (36490) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (36500) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (37340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (38340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (38350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (38350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (38350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (39340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (39500) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (39500) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (39500) LCD_TASK: Updating LCD...[0m
+[0;32mI (39500) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (39510) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (40340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (40350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (40350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (40350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (41340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (42340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (42350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (42350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (42350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (42510) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (42510) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (42510) LCD_TASK: Updating LCD...[0m
+[0;32mI (42510) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (42520) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (43340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (44340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (44350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (44350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (44350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (45340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (45520) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (45520) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (45520) LCD_TASK: Updating LCD...[0m
+[0;32mI (45520) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (45530) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (46340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (46350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (46350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (46350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (47340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (48340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (48350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (48350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (48350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m
+[0;32mI (48530) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (48530) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (48530) LCD_TASK: Updating LCD...[0m
+[0;32mI (48530) LCD_TASK: MQ5 Value: 2342, PIR State: No Motion[0m
+[0;32mI (48540) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (49340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (50340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (50350) ADC: ADC1 Channel[0] Raw Data: 2336[0m
+[0;32mI (50350) ADC: ADC1 Channel[0] Cali Voltage: 2342 mV[0m
+[0;32mI (50350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 2342[0m

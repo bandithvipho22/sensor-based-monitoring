@@ -1,0 +1,56 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ITC-EA\I5-EA\embeded_electronic\course\sensor_project01\build\bootloader\esp-idf\esptool_py && c:\esp\tool\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/build/bootloader/bootloader.bin"
+Bootloader binary size 0x54e0 bytes. 0x2b20 bytes (34%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable sensor_project01.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/build/sensor_project01.bin
+[7/8] cmd.exe /C "cd /D D:\ITC-EA\I5-EA\embeded_electronic\course\sensor_project01\build\esp-idf\esptool_py && c:\esp\tool\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/build/partition_table/partition-table.bin D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/build/sensor_project01.bin"
+sensor_project01.bin binary size 0x2e290 bytes. Smallest app partition is 0x100000 bytes. 0xd1d70 bytes (82%) free.
+[7/8] cmd.exe /C "cd /D C:\espesptool.py --chip esp32c6 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 sensor_project01.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM11
+Connecting....
+Chip is ESP32-C6 (QFN40) (revision v0.0)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 40:4c:ca:ff:fe:4d:7d:78
+BASE MAC: 40:4c:ca:4d:7d:78
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0003efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21728 bytes to 13111...
+Writing at 0x00000000... (100 %)
+Wrote 21728 bytes (13111 compressed) at 0x00000000 in 0.6 seconds (effective 292.2 kbit/s)...
+Hash of data verified.
+Compressed 189072 bytes to 94869...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001b702... (33 %)
+Writing at 0x00021e93... (50 %)
+Writing at 0x000292f4... (66 %)
+Writing at 0x0003138c... (83 %)
+Writing at 0x000380df... (100 %)
+Wrote 189072 bytes (94869 compressed) at 0x00010000 in 2.5 seconds (effective 599.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 564.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+\esp-idf\components\esptool_py && C:\esp\tool\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf -D SERIAL_TOOL=c:/esp/tool/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ITC-EA/I5-EA/embeded_electronic/course/sensor_project01/build -P C:/esp/esp-idf/components/esptool_py/run_serial_tool.cmake"

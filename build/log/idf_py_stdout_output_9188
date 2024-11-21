@@ -1,0 +1,700 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 20 2024 08:16:57[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0b008h ( 45064) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001b030 vaddr=40800000 size=04fe8h ( 20456) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=157d0h ( 88016) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=000357f8 vaddr=40804fe8 size=0720ch ( 29196) load[0m
+[0;32mI (135) esp_image: segment 4: paddr=0003ca0c vaddr=4080c200 size=018b0h (  6320) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=0003e2c4 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (147) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Unicore app[0m
+[0;32mI (174) cpu_start: Pro cpu start user code[0m
+[0;32mI (174) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (174) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     sensor_project01[0m
+[0;32mI (182) app_init: App version:      1[0m
+[0;32mI (187) app_init: Compile time:     Nov 20 2024 08:16:08[0m
+[0;32mI (193) app_init: ELF file SHA256:  eefba28b7...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 4080EAD0 len 0006DB40 (438 KiB): RAM[0m
+[0;32mI (231) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (237) heap_init: At 50000004 len 00003FE4 (15 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (265) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (282) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (289) coexist: coex firmware version: 4482466[0m
+[0;32mI (295) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+[0;32mI (300) INIT: Initializing sensors...[0m
+[0;32mI (310) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) ADC: calibration scheme version is Curve Fitting[0m
+[0;32mI (320) ADC: Calibration Success[0m
+[0;32mI (330) INIT: Sensors initialized successfully![0m
+[0;32mI (330) INIT: LCD initialized successfully![0m
+[0;32mI (340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (340) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (350) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (350) INIT: Tasks created successfully![0m
+[0;32mI (360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (360) main_task: Returned from app_main()[0m
+[0;32mI (1340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (2340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (2350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (3340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (3360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (3360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (4340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (4350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (5340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (6340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (6350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (6360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (6360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (7340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (8340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (8350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (9340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (9360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (9360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (10340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (10350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (11340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (12340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (12350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (12360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (12360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (13340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (14340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (14350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (15340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (15360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (15360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (16340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (16350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (17340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (18340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (18350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (18360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (18360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (19340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (20340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (20350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (21340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (21360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (21360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (22340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (22350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (23340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (24340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (24350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (24360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (24360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (25340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (26340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (26350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (27340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (27360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (27360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (28340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (28350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (29340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (30340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (30350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (30360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (30360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (31340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (32340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (32350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (33340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (33360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (33360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (34340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (34350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (35340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (36340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (36350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (36360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (36360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (37340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (38340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (38350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (39340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (39360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (39360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (40340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (40350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (41340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (42340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (42350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (42360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (42360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (43340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (44340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (44350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (45340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (45360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (45360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (46340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (46350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (47340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (48340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (48350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (48360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (48360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (49340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (50340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (50350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (51340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (51360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (51360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (52340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (52350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (53340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (54340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (54350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (54360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (54360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (55340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (56340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (56350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (57340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (57360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (57360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (58340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (58350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (59340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (60340) PIR_SENSOR: PIR Sensor State: 1[0m
+[0;32mI (60350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (60360) LCD_TASK: MQ5 Value: 852, PIR State: Motion[0m
+[0;32mI (60360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (61340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (62340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (62350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (63340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (63360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (63360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (64340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (64350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (65340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (66340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (66350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (66360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (66360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (67340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (68340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (68350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (69340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (69360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (69360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (70340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (70350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (71340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (72340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (72350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (72360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (72360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (73340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (74340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (74350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (75340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (75360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (75360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (76340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (76350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (77340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (78340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (78350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (78360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (78360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (79340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (80340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (80350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (81340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (81360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (81360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (82340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (82350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (83340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (84340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (84350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (84360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (84360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (85340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (86340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (86350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (87340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (87360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (87360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (88340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (88350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (89340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (90340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (90350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (90360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (90360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (91340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (92340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (92350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (93340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (93360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (93360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (94340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (94350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (95340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (96340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (96350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (96360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (96360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (97340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (98340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (98350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (99340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (99360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (99360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (100340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (100350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (101340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (102340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (102350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (102360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (102360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (103340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (104340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (104350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (105340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (105360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (105360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (106340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (106350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (107340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (108340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (108350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (108360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (108360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (109340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (110340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (110350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (111340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (111360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (111360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (112340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (112350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (113340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (114340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (114350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (114360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (114360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (115340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (116340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (116350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (117340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (117360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (117360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (118340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (118350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (119340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (120340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (120350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (120360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (120360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (121340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (122340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (122350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (123340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (123360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (123360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (124340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (124350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (125340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (126340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (126350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (126360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (126360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (127340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (128340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (128350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (129340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (129360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (129360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (130340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (130350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (131340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (132340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (132350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (132360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (132360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (133340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (134340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (134350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (135340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (135360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (135360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (136340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (136350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 853[0m
+[0;32mI (137340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (138340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (138350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (138360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (138360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (139340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (140340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (140350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (141340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (141360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (141360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (142340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (142350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (143340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (144340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (144350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (144360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (144360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (145340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (146340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (146350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (147340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (147360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (147360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (148340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (148350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (149340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (150340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (150350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (150360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (150360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (151340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (152340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (152350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (153340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (153360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (153360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (154340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (154350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (155340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (156340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (156350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (156360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (156360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (157340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (158340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (158350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (159340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (159360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (159360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (160340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (160350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (161340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (162340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (162350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (162360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (162360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (163340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (164340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (164350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (165340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (165360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (165360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (166340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (166350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (167340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (168340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (168350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (168360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (168360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (169340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (170340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (170350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 846[0m
+[0;32mI (171340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (171360) LCD_TASK: MQ5 Value: 846, PIR State: No Motion[0m
+[0;32mI (171360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (172340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (172350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 843[0m
+[0;32mI (173340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (174340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (174350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 839[0m
+[0;32mI (174360) LCD_TASK: MQ5 Value: 839, PIR State: No Motion[0m
+[0;32mI (174360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (175340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (176340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (176350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 839[0m
+[0;32mI (177340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (177360) LCD_TASK: MQ5 Value: 839, PIR State: No Motion[0m
+[0;32mI (177360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (178340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (178350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 844[0m
+[0;32mI (179340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (180340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (180350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (180360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (180360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (181340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (182340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (182350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 849[0m
+[0;32mI (183340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (183360) LCD_TASK: MQ5 Value: 849, PIR State: No Motion[0m
+[0;32mI (183360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (184340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (184350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (185340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (186340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (186350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (186360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (186360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (187340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (188340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (188350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (189340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (189360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (189360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (190340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (190350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (191340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (192340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (192350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (192360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (192360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (193340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (194340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (194350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (195340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (195360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (195360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (196340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (196350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (197340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (198340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (198350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (198360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (198360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (199340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (200340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (200350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (201340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (201360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (201360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (202340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (202350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (203340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (204340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (204350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (204360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (204360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (205340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (206340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (206350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (207340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (207360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (207360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (208340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (208350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (209340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (210340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (210350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (210360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (210360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (211340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (212340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (212350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (213340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (213360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (213360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (214340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (214350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 851[0m
+[0;32mI (215340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (216340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (216350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (216360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (216360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (217340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (218340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (218350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 851[0m
+[0;32mI (219340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (219360) LCD_TASK: MQ5 Value: 851, PIR State: No Motion[0m
+[0;32mI (219360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (220340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (220350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 849[0m
+[0;32mI (221340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (222340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (222350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 849[0m
+[0;32mI (222360) LCD_TASK: MQ5 Value: 849, PIR State: No Motion[0m
+[0;32mI (222360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (223340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (224340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (224350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 851[0m
+[0;32mI (225340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (225360) LCD_TASK: MQ5 Value: 851, PIR State: No Motion[0m
+[0;32mI (225360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (226340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (226350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 841[0m
+[0;32mI (227340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (228340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (228350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (228360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (228360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (229340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (230340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (230350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 841[0m
+[0;32mI (231340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (231360) LCD_TASK: MQ5 Value: 841, PIR State: No Motion[0m
+[0;32mI (231360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (232340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (232350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 844[0m
+[0;32mI (233340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (234340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (234350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 837[0m
+[0;32mI (234360) LCD_TASK: MQ5 Value: 837, PIR State: No Motion[0m
+[0;32mI (234360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (235340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (236340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (236350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 838[0m
+[0;32mI (237340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (237360) LCD_TASK: MQ5 Value: 838, PIR State: No Motion[0m
+[0;32mI (237360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (238340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (238350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 839[0m
+[0;32mI (239340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (240340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (240350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (240360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (240360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (241340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (242340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (242350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 838[0m
+[0;32mI (243340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (243360) LCD_TASK: MQ5 Value: 838, PIR State: No Motion[0m
+[0;32mI (243360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (244340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (244350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (245340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (246340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (246350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (246360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (246360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (247340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (248340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (248350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (249340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (249360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (249360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (250340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (250350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (251340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (252340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (252350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (252360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (252360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (253340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (254340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (254350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (255340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (255360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (255360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (256340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (256350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (257340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (258340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (258350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (258360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (258360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (259340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (260340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (260350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (261340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (261360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (261360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (262340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (262350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (263340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (264340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (264350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (264360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (264360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (265340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (266340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (266350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 852[0m
+[0;32mI (267340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (267360) LCD_TASK: MQ5 Value: 852, PIR State: No Motion[0m
+[0;32mI (267360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (268340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (268350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 850[0m
+[0;32mI (269340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (270340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (270350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (270360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (270360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (271340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (272340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (272350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (273340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (273360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (273360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (274340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (274350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (275340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (276340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (276350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (276360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (276360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (277340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (278340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (278350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (279340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (279360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (279360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (280340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (280350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (281340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (282340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (282350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (282360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (282360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (283340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (284340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (284350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (285340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (285360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (285360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (286340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (286350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (287340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (288340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (288350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (288360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (288360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (289340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (290340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (290350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
+[0;32mI (291340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (291360) LCD_TASK: MQ5 Value: 836, PIR State: No Motion[0m
+[0;32mI (291360) LCD_TASK: LCD updated successfully.[0m
+[0;32mI (292340) PIR_SENSOR: PIR Sensor State: 0[0m
+[0;32mI (292350) MQ5_SENSOR: MQ-5 Sensor Value (Analog): 836[0m
