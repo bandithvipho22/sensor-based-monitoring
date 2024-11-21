@@ -75,3 +75,7 @@ value of it will increasing up to 1766.
 
 ![Screenshot 2024-11-21 073443](https://github.com/user-attachments/assets/1c70eaae-d958-42ca-aba3-03c02a4b5b41)
 
+As the result, in this Demo project sensor based-monitoring system is successful and be able to
+work with multiple sensor in the same time by using FreeRTOS with difference delay. However,
+we also can scale this project into application such as smart home system by add more sensors
+and define threshold of each sensor in specific.
