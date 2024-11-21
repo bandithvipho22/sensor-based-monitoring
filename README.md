@@ -67,6 +67,7 @@ load resistor using an (ADC). However,I use library "adc.c" that have capability
 calibrate ADC by converting the raw ADC readings to voltage values.
 + LCD-I2C (delay 3000): Display the PIR sensor state (Motion or No-Motion) and
 Voltage value of MQ-5 gas sensor.
+
 Note that: The library and configuration of I2C, I follow from this [LINK](https://controllerstech.com/i2c-in-esp32-esp-idf-lcd-1602/)
 
 # _Results_
